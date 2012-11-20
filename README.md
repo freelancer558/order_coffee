@@ -1,10 +1,12 @@
 order_coffee
 ============
 
-- admin
-  -- create account
-  -- add coffee
+admin
+=
+- create account
+- add coffee
 
-- front page
-  -- show order list/day
-  -- show order history
+front page
+=
+- show order list/day
+- show order history
