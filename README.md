@@ -1,4 +1,12 @@
 order_coffee
 ============
 
-Ruby on Rails tutorial application
+admin
+=
+- create account
+- add coffee
+
+front page
+=
+- show order list/day
+- show order history
