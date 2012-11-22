@@ -1,7 +1,7 @@
 <%= form_for(@status) do |f| %>
   <% if @status.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+      <h3><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h3>
 
       <ul>
       <% @status.errors.full_messages.each do |msg| %>
@@ -11,11 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-inline">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+    <%= f.text_field :name ,:class => 'input-medium', :width => '100px', :placeholder => 'New status' %>
+    <%= f.submit :class => "btn" %>
   </div>
 <% end %>
