@@ -1,0 +1,18 @@
+<%#=link_to "New Order",  static_pages_home_path%>
+<%#=link_to "History",  static_pages_home_path(:history => true)%>
+<h3> Your History Order </h3>
+
+<div class="well">
+<% @orders.each do |order| %>
+	<% 
+		user = User.find(order.user_id)
+		coffee = Coff.find(order.coff_id)
+		status = Status.find(order.status_id)
+	%>
+	<div class="alert alert-block">
+		Order from : <%= user.email %> (<%=order.created_at%>) <br>
+		Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
+		Order status : <%= status.name %>
+	</div>
+<% end %>
+</div>

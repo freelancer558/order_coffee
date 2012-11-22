@@ -1,0 +1,10 @@
+<h3> All Order </h3>
+<%= @orders.each do |order| %>
+<% 
+	user = User.find(order.user_id)
+	coffee = Coff.find(order.coff_id)
+%>
+	Order from : <%= user.email %> <br>
+	Order Coffee : <%= coffee.name %> <br>
+	<hr>
+<% end %>

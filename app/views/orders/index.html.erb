@@ -1,0 +1,13 @@
+<h3> Your Order </h3>
+<% @orders.each do |order| %>
+<% 
+	user = User.find(order.user_id)
+	coffee = Coff.find(order.coff_id)
+%>
+
+<div class="alert alert-success">
+	Order from : <%= user.email %> <br>
+	Order Coffee : <%= coffee.name %> <br>
+</div>
+
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @coff.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @coff.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_coff_path(@coff) %> |
+<%= link_to 'Back', coffs_path %>

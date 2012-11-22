@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  coffId: 1
+  orderId: 1
+  userId: 1
+
+two:
+  coffId: 1
+  orderId: 1
+  userId: 1
