@@ -1,8 +1,9 @@
 <%#=link_to "New Order",  static_pages_home_path%>
 <%#=link_to "History",  static_pages_home_path(:history => true)%>
 <h5> Your History Order </h5>
-<%= will_paginate @done_cancel %>
+
 <div class="well">
+<%= will_paginate @done_cancel %>
 <% @done_cancel.each do |order| %>
 	<% 
 		user = User.find(order.user_id)
@@ -29,7 +30,7 @@
 
 			</div>
 		<% end %>
-<% end %>
+	<% end %>
 <%= will_paginate @done_cancel %>
 </div>
 
