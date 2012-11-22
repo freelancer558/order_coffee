@@ -1,4 +1,18 @@
 OrderCoffee::Application.routes.draw do
+
+  resources :statuses
+
+
+  resources :coffs
+
+  devise_for :users do
+     resources :orders
+  end
+
+  get "static_pages/home"
+  get "static_pages/history_order"
+
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -49,7 +63,7 @@ OrderCoffee::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-
+  root :to => 'StaticPages#home'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
