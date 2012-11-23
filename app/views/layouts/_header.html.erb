@@ -11,8 +11,8 @@
         <ul class="nav pull-right">
           <%if user_signed_in? %>
           <%if current_user.admin? %>
-          <li><%= link_to "Hello Admin [#{current_user.username}]", admin_dashboard_index_path %></li>
-          <li><%= link_to "Dashboard", admin_dashboard_index_path %></li>
+          <li><%= link_to "Hello Admin [#{current_user.username}]", admin_dashboard_path %></li>
+          <li><%= link_to "Dashboard", admin_dashboard_path %></li>
           <% end %>
           <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting<span class="caret"></span></a>

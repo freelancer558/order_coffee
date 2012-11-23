@@ -57,8 +57,6 @@ GEM
       thor (~> 0.14)
     json (1.7.5)
     libv8 (3.3.10.4)
-    lightbox-rails (0.0.3)
-      rails (~> 3.2.8)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -132,7 +130,6 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
-  lightbox-rails (~> 0.0.3)
   paperclip (~> 3.0)
   pg
   rails (= 3.2.9)

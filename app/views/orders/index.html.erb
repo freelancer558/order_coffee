@@ -1,13 +1,8 @@
-<h4> 
-Welcome : <%= @user.email %> 
-</h4>
-
-    <!-- Button to trigger modal -->
-   <div class="pull-right">
-    <a href="#myModal" role="button" class="btn btn-primary btn-larg" data-toggle="modal"><i class="icon-plus"></i>Take Order</a>
-    <a href="history" role="button" class="btn btn-larg"><i class="icon-folder-open"></i>History</a>
-    </div>
-
+<!-- Button to trigger modal -->
+<div class="pull-right">
+  <a href="#myModal" role="button" class="btn btn-primary btn-larg" data-toggle="modal"><span class="icon-plus"></span>Take Order</a>
+  <a href="history" role="button" class="btn btn-larg"><span class="icon-folder-open"></span>History</a>
+</div>
 <%= render 'take_order' %>
 <%= render 'order_new' %>
 
