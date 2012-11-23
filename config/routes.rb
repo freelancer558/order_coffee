@@ -3,8 +3,9 @@ OrderCoffee::Application.routes.draw do
   resources :statuses
 
   namespace :admin do 
-    resources :dashboard
-    get "static_pages/admin"
+    get 'dashboard' => 'dashboard#index'
+    resources :users
+    match "static_pages/admin" => "admin/dashboard#index"
   end
 
   resources :coffs
