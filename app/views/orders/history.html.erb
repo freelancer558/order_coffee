@@ -32,9 +32,11 @@
 								Order from : <%= user.email %> (<%=order.created_at%>) <br>
 								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
 								Order status : <%= status.name %>
-								<div class="pull-right">
-									<a href="<%= order_path(order) %>" class="delete btn btn-small" data-method="delete"><i class="icon-trash"></i></a>
-								</div>
+								<% if(current_user.admin==true ) %>
+									<div class="pull-right">
+										<a href="<%= order_path(order) %>" class="delete btn btn-small" data-method="delete"><i class="icon-trash"></i></a>
+									</div>
+								<% end %>	
 							</div>
 						<% else %>
 							<div class="alert alert-error">
@@ -42,10 +44,11 @@
 								Order from : <%= user.email %> (<%=order.created_at%>) <br>
 								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
 								Order status : <%= status.name %>
+								<% if(current_user.admin==true ) %>
 									<div class="pull-right">
 										<a href="<%= order_path(order) %>" class="delete btn btn-small" data-method="delete"><i class="icon-trash"></i></a>
-									</div>				  
-
+									</div>		
+								<% end %>		  
 							</div>
 						<% end %>
 					<% end %>

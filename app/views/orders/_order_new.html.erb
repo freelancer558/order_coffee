@@ -16,10 +16,12 @@
 
    <div class="pull-right">
 
+    <% if(user.id==current_user.id or current_user.admin==true ) %>
      <%= link_to 'Got it', order_path(order,:status =>Status::DONE_ID), :class => 'btn btn-mini btn-success',:title =>'Got it', method: :put, data: { confirm: 'You got it?' } %>
 
      <%= link_to 'Cancle', order_path(order,:status =>Status::CANCEL_ID), :class => 'btn btn-mini btn-info',:title =>'Cancle', method: :put, data: { confirm: 'Are you sure?' } %>
 
+     <% end %>
    </div>	
  </div>
  <% end %>
