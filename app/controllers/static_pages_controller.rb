@@ -10,8 +10,11 @@ class StaticPagesController < ApplicationController
   	#end
 
     @orders_new = Order.new_order.order_desc
-    @orders_history = Order.history.order_desc
-  	 
+    @orders_history = Order.history.order_desc	 
+    @orders_cancled = Order.cancel.order_desc  
+    @done_cancel = Order.paginate(:page => params[:page]).done_cancel.order_desc 
+
+    @order = Order.new
   end
 
 

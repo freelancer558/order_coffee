@@ -1,6 +1,9 @@
 <h4> 
 Welcome : <%= @user.username %>(<%= @user.email %>) 
 </h4>
+<%= render 'take_order' %>
+
+<!--
 <div class="accordion" id="accordion2">
 	<div class="accordion-group">
 		<div class="accordion-heading">
@@ -8,7 +11,7 @@ Welcome : <%= @user.username %>(<%= @user.email %>)
 			New Order
 			</a>
 		</div>
-		<div id="collapseOne" class="accordion-body collapse">
+		<div id="collapseOne" class="accordion-body collapse in">
 			<div class="accordion-inner">
 			 	<%= render 'order_new' %>
 			</div>
@@ -27,7 +30,10 @@ Welcome : <%= @user.username %>(<%= @user.email %>)
 		</div>
 	</div>
 </div>
+-->
 
+<%= render 'order_new' %>
+<%= render 'order_history' %>
 
 
  

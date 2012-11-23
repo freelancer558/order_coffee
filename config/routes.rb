@@ -2,6 +2,10 @@ OrderCoffee::Application.routes.draw do
 
   resources :statuses
 
+  namespace :admin do 
+    resources :dashboard
+    get "static_pages/admin"
+  end
 
   resources :coffs
 

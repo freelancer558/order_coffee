@@ -9,10 +9,12 @@ class User < ActiveRecord::Base
   attr_accessor :login
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :login
   # attr_accessible :title, :body
-
   has_many :orders
   has_many :coffees, :through => :orders
   accepts_nested_attributes_for :orders
+
+  validates_presence_of :username
+  validates_uniqueness_of :username, :email, :case_sensitive => false
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup

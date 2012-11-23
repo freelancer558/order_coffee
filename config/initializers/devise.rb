@@ -56,7 +56,7 @@ Devise.setup do |config|
   config.authentication_keys = [ :login ]
   config.reset_password_keys = [ :login ]
   config.confirmation_keys = [ :login ]
-
+  config.password_length = 4..20
   # If http headers should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
 

@@ -36,4 +36,31 @@ class OrdersController < ApplicationController
 
 		#Post.where('id > 10').limit(20).order('id desc').only(:order, :where)
 	end
+
+   def destroy
+    order = Order.find(params[:id])
+    order.destroy
+
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.json { head :no_content }
+    end
+  end
+
+  def update
+  	order = Order.find(params[:id])
+  	order.status_id = params[:status]
+
+    respond_to do |format|
+     # if order.update_attributes(params[:coff])
+     if order.save
+        format.html { redirect_to root_path}
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
 end

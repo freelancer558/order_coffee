@@ -1,14 +1,22 @@
 <div class="well">
-<% @coffs.each do |coff| %>
-  <tr>
-    <td><%= coff.name %></td>
-    <td><%= coff.price %></td>
-    <td><%= link_to 'Show', coff %></td>
-    <td><%= link_to 'Edit', edit_coff_path(coff) %></td>
-    <td><%= link_to 'Destroy', coff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-  <br>
-<% end %>
-
-<%= link_to 'New Coff', new_coff_path %>
+  <h4>Coffe Name</h4>
+  <p><%= link_to 'New Coffee', new_coff_path %></p>
+  <table class="table table-bordered">
+    <tr class="success" >
+      <td>Coffe name</td>
+      <td>Price (Baht)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <% @coffs.each do |coff| %>
+    <tr>
+      <td><%= coff.name %></td>
+      <td><%= coff.price %></td>
+      <td><%= link_to 'Show', coff %></td>
+      <td><%= link_to 'Edit', edit_coff_path(coff) %></td>
+      <td><%= link_to 'Destroy', coff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </table>
 </div>
