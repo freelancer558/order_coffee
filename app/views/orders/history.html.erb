@@ -28,6 +28,7 @@
 					%>
 						<% if(order.status_id==Status::DONE_ID) %>
 							<div class="alert alert-info">
+								 <img src=<%= coffee.image.url %> class="img-rounded img-polaroid pull-left" width="50" />
 								Order from : <%= user.email %> (<%=order.created_at%>) <br>
 								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
 								Order status : <%= status.name %>
@@ -37,6 +38,7 @@
 							</div>
 						<% else %>
 							<div class="alert alert-error">
+								 <img src=<%= coffee.image.url %> class="img-rounded img-polaroid pull-left" width="50" />
 								Order from : <%= user.email %> (<%=order.created_at%>) <br>
 								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
 								Order status : <%= status.name %>

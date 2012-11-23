@@ -11,7 +11,7 @@
                 <div class="well pull-center">
                  <%=form_for @order do |f| %>
                     <%=f.select :coff_id, Coff.all.collect {|x| [x.name + "("+ x.price.to_s+ "฿)", x.id]} %>
-                    <%=f.submit "Send Order"%>
+                     <%=f.submit "Send Order"%>
                 <%end%>
                 </div>
             </p>
