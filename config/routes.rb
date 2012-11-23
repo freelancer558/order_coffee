@@ -10,7 +10,7 @@ OrderCoffee::Application.routes.draw do
   end
 
   get "static_pages/home"
-  get "static_pages/history_order"
+  get "static_pages/order_history"
 
  
   # The priority is based upon order of creation:
