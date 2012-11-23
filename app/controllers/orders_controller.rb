@@ -46,7 +46,7 @@ class OrdersController < ApplicationController
 	    order.destroy
 
 	    respond_to do |format|
-	      format.html { redirect_to root_path }
+	      format.html { redirect_to history_path }
 	      format.json { head :no_content }
 	    end
   	end
