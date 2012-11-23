@@ -1,0 +1,57 @@
+<%#=link_to "New Order",  static_pages_home_path%>
+<%#=link_to "History",  static_pages_home_path(:history => true)%>
+
+    <!-- Button to trigger modal -->
+   <div class="pull-right">
+    <a href="/" role="button" class="btn btn-larg"><i class="icon-home"></i>Home</a>    
+    </div>
+
+
+<h5> Your History Order </h5>
+<div class="accordion" id="accordion2">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			New Order
+			</a>
+		</div>
+		<div id="collapseOne" class="accordion-body collapse in">
+			<div class="accordion-inner">
+			 <!-- ################## Detail #####################-->
+				<div class="well">
+				<%= will_paginate @done_cancel %>
+				<% @done_cancel.each do |order| %>
+					<% 
+						user = User.find(order.user_id)
+						coffee = Coff.find(order.coff_id)
+						status = Status.find(order.status_id)
+					%>
+						<% if(order.status_id==Status::DONE_ID) %>
+							<div class="alert alert-info">
+								Order from : <%= user.email %> (<%=order.created_at%>) <br>
+								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
+								Order status : <%= status.name %>
+								<div class="pull-right">
+									<a href="<%= order_path(order) %>" class="delete btn btn-small" data-method="delete"><i class="icon-trash"></i></a>
+								</div>
+							</div>
+						<% else %>
+							<div class="alert alert-error">
+								Order from : <%= user.email %> (<%=order.created_at%>) <br>
+								Order Coffee : <%= coffee.name %> (<%= coffee.price.to_s%>฿)<br>
+								Order status : <%= status.name %>
+									<div class="pull-right">
+										<a href="<%= order_path(order) %>" class="delete btn btn-small" data-method="delete"><i class="icon-trash"></i></a>
+									</div>				  
+
+							</div>
+						<% end %>
+					<% end %>
+				<%= will_paginate @done_cancel %>
+				</div>
+
+				<!-- ####################################### -->
+			</div>
+		</div>
+	</div>
+</div>

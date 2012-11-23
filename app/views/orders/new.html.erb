@@ -1,5 +1,0 @@
-<h2> Order </h2>
-<%=form_for @order do |f| %>
-	<%=f.select :coff_id, Coff.all.collect {|x| [x.name + "("+ x.price.to_s+ "฿)", x.id]} %>
-	<%=f.submit "Send Order"%>
-<%end%>

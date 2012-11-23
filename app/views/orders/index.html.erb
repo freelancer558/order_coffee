@@ -1,13 +1,13 @@
-<h3> Your Order </h3>
-<% @orders.each do |order| %>
-<% 
-	user = User.find(order.user_id)
-	coffee = Coff.find(order.coff_id)
-%>
+<h4> 
+Welcome : <%= @user.email %> 
+</h4>
 
-<div class="alert alert-success">
-	Order from : <%= user.email %> <br>
-	Order Coffee : <%= coffee.name %> <br>
-</div>
+    <!-- Button to trigger modal -->
+   <div class="pull-right">
+    <a href="#myModal" role="button" class="btn btn-primary btn-larg" data-toggle="modal"><i class="icon-plus"></i>Take Order</a>
+    <a href="history" role="button" class="btn btn-larg"><i class="icon-folder-open"></i>History</a>
+    </div>
 
-<% end %>
+<%= render 'take_order' %>
+<%= render 'order_new' %>
+
