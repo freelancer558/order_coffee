@@ -1,6 +1,4 @@
-    <!-- Button to trigger modal -->
-   <div class="pull-right">
-    <a href="#myModal" role="button" class="btn btn-primary btn-larg" data-toggle="modal"><i class="icon-plus"></i>Take Order</a>
+
      
     <!-- Modal -->
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -13,7 +11,7 @@
                 <div class="well pull-center">
                  <%=form_for @order do |f| %>
                     <%=f.select :coff_id, Coff.all.collect {|x| [x.name + "("+ x.price.to_s+ "฿)", x.id]} %>
-                    <%=f.submit "Send Order"%>
+                     <%=f.submit "Send Order"%>
                 <%end%>
                 </div>
             </p>
@@ -22,5 +20,5 @@
              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
             <button class="btn btn-primary">Save changes</button>
         </div> -->
-    </div>
+    
 </div>

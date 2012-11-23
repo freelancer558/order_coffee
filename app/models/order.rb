@@ -3,7 +3,7 @@ class Order < ActiveRecord::Base
   belongs_to :coff
   belongs_to :status
 
-  self.per_page = 5
+  self.per_page = 10
 
   scope :new_order, where(:status_id => Status::NEW_ORDER_ID)
   scope :history, where(:status_id => Status::DONE_ID)

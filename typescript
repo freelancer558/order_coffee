@@ -1,0 +1,379 @@
+Script started on Fri 23 Nov 2012 12:02:25 PM ICT
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ script/plugin
+bash: script/plugin: No such file or directory
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ [K]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ [K]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ bew[K[K[Knre[K[K[Kbres[Kw instsall gs[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbrew install imagemagiack[K[K[K[Kick
+No command 'brew' found, did you mean:
+ Command 'brec' from package 'bplay' (universe)
+ Command 'qbrew' from package 'qbrew' (universe)
+brew: command not found
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ sudo apt-get install libmagickwand-dev
+[sudo] password for pao: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  gir1.2-rsvg-2.0 libbz2-dev libcairo-script-interpreter2 libcairo2-dev
+  libcdt4 libcgraph5 libdjvulibre-dev libexif-dev libexpat1-dev
+  libfontconfig1-dev libfreetype6-dev libgdk-pixbuf2.0-dev libglib2.0-dev
+  libgraph4 libgraphviz-dev libgvc5 libgvpr1 libice-dev libilmbase-dev
+  libjasper-dev libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  liblcms1-dev liblqr-1-0-dev liblzma-dev libmagickcore-dev libopenexr-dev
+  libpathplan4 libpcre3-dev libpcrecpp0 libpixman-1-dev libpng12-dev
+  libpthread-stubs0 libpthread-stubs0-dev librsvg2-dev libsm-dev libtiff5-dev
+  libtiffxx5 libwmf-dev libx11-dev libx11-doc libxau-dev libxcb-render0-dev
+  libxcb-shm0-dev libxcb1-dev libxdmcp-dev libxdot4 libxext-dev libxrender-dev
+  libxt-dev x11proto-core-dev x11proto-input-dev x11proto-kb-dev
+  x11proto-render-dev x11proto-xext-dev xorg-sgml-doctools xtrans-dev
+Suggested packages:
+  libcairo2-doc libglib2.0-doc libice-doc liblzma-doc librsvg2-doc libsm-doc
+  libwmf-doc libxcb-doc libxext-doc libxt-doc
+The following NEW packages will be installed:
+  gir1.2-rsvg-2.0 libbz2-dev libcairo-script-interpreter2 libcairo2-dev
+  libcdt4 libcgraph5 libdjvulibre-dev libexif-dev libexpat1-dev
+  libfontconfig1-dev libfreetype6-dev libgdk-pixbuf2.0-dev libglib2.0-dev
+  libgraph4 libgraphviz-dev libgvc5 libgvpr1 libice-dev libilmbase-dev
+  libjasper-dev libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  liblcms1-dev liblqr-1-0-dev liblzma-dev libmagickcore-dev libmagickwand-dev
+  libopenexr-dev libpathplan4 libpcre3-dev libpcrecpp0 libpixman-1-dev
+  libpng12-dev libpthread-stubs0 libpthread-stubs0-dev librsvg2-dev libsm-dev
+  libtiff5-dev libtiffxx5 libwmf-dev libx11-dev libx11-doc libxau-dev
+  libxcb-render0-dev libxcb-shm0-dev libxcb1-dev libxdmcp-dev libxdot4
+  libxext-dev libxrender-dev libxt-dev x11proto-core-dev x11proto-input-dev
+  x11proto-kb-dev x11proto-render-dev x11proto-xext-dev xorg-sgml-doctools
+  xtrans-dev
+0 upgraded, 60 newly installed, 0 to remove and 0 not upgraded.
+Need to get 18.2 MB of archives.
+After this operation, 62.4 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+0% [Working]            Get:1 http://th.archive.ubuntu.com/ubuntu/ quantal-updates/main libcairo-script-interpreter2 i386 1.12.2-1ubuntu2.1 [64.1 kB]
+            0% [1 libcairo-script-interpreter2 1,072 B/64.1 kB 2%]                                                      0% [Working]            Get:2 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpcrecpp0 i386 1:8.30-5ubuntu1 [17.1 kB]
+            0% [2 libpcrecpp0 0 B/17.1 kB 0%]                                 0% [Working]            Get:3 http://th.archive.ubuntu.com/ubuntu/ quantal-updates/main libtiffxx5 i386 4.0.2-1ubuntu2.1 [7,010 B]
+            0% [3 libtiffxx5 0 B/7,010 B 0%]                                0% [Working]            Get:4 http://th.archive.ubuntu.com/ubuntu/ quantal/main libjbig-dev i386 2.0-2ubuntu1 [6,572 B]
+            0% [4 libjbig-dev 0 B/6,572 B 0%]                                 1% [Working]            Get:5 http://th.archive.ubuntu.com/ubuntu/ quantal/main gir1.2-rsvg-2.0 i386 2.36.3-0ubuntu1 [3,830 B]
+            1% [5 gir1.2-rsvg-2.0 0 B/3,830 B 0%]                                     1% [Working]            Get:6 http://th.archive.ubuntu.com/ubuntu/ quantal/main libbz2-dev i386 1.0.6-4 [31.6 kB]
+            1% [6 libbz2-dev 0 B/31.6 kB 0%]                                1% [Working]            Get:7 http://th.archive.ubuntu.com/ubuntu/ quantal/main libexpat1-dev i386 2.1.0-1ubuntu1 [205 kB]
+            1% [7 libexpat1-dev 0 B/205 kB 0%]                                  2% [7 libexpat1-dev 163 kB/205 kB 80%]                                      2% [Working]            Get:8 http://th.archive.ubuntu.com/ubuntu/ quantal/main libfreetype6-dev i386 2.4.10-0ubuntu1 [778 kB]
+            2% [8 libfreetype6-dev 0 B/778 kB 0%]                                     3% [8 libfreetype6-dev 188 kB/778 kB 24%]3% [8 libfreetype6-dev 262 kB/778 kB 34%]4% [8 libfreetype6-dev 422 kB/778 kB 54%]5% [8 libfreetype6-dev 551 kB/778 kB 71%]5% [8 libfreetype6-dev 628 kB/778 kB 81%]6% [8 libfreetype6-dev 745 kB/778 kB 96%]                                         6% [Working]            Get:9 http://th.archive.ubuntu.com/ubuntu/ quantal/main libfontconfig1-dev i386 2.10.1-0ubuntu3 [673 kB]
+            6% [9 libfontconfig1-dev 0 B/673 kB 0%]                                       7% [9 libfontconfig1-dev 136 kB/673 kB 20%]                                           7% [9 libfontconfig1-dev 236 kB/673 kB 35%]                   213 kB/s 1min 19s8% [9 libfontconfig1-dev 355 kB/673 kB 53%]                   213 kB/s 1min 18s9% [9 libfontconfig1-dev 484 kB/673 kB 72%]                   213 kB/s 1min 17s10% [9 libfontconfig1-dev 630 kB/673 kB 94%]                  213 kB/s 1min 17s10% [9 libfontconfig1-dev 652 kB/673 kB 97%]                  213 kB/s 1min 17s10% [Working]                                                 213 kB/s 1min 17s                                                                               Get:10 http://th.archive.ubuntu.com/ubuntu/ quantal/main xorg-sgml-doctools all 1:1.10-1 [12.0 kB]
+10% [10 xorg-sgml-doctools 0 B/12.0 kB 0%]                    213 kB/s 1min 17s10% [Working]                                                 213 kB/s 1min 16s                                                                               Get:11 http://th.archive.ubuntu.com/ubuntu/ quantal/main x11proto-core-dev all 7.0.23-1 [744 kB]
+10% [11 x11proto-core-dev 0 B/744 kB 0%]                      213 kB/s 1min 16s11% [11 x11proto-core-dev 126 kB/744 kB 17%]                  213 kB/s 1min 16s11% [11 x11proto-core-dev 244 kB/744 kB 33%]                  213 kB/s 1min 15s12% [11 x11proto-core-dev 356 kB/744 kB 48%]                  213 kB/s 1min 15s12% [11 x11proto-core-dev 447 kB/744 kB 60%]                  213 kB/s 1min 14s13% [11 x11proto-core-dev 544 kB/744 kB 73%]                  213 kB/s 1min 14s13% [11 x11proto-core-dev 634 kB/744 kB 85%]                  213 kB/s 1min 13s14% [11 x11proto-core-dev 690 kB/744 kB 93%]                  189 kB/s 1min 22s14% [11 x11proto-core-dev 723 kB/744 kB 97%]                  189 kB/s 1min 22s14% [Working]                                                 189 kB/s 1min 22s                                                                               Get:12 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxau-dev i386 1:1.0.7-1 [10.0 kB]
+14% [12 libxau-dev 0 B/10.0 kB 0%]                            189 kB/s 1min 22s14% [Working]                                                 189 kB/s 1min 22s                                                                               Get:13 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxdmcp-dev i386 1:1.1.1-1 [26.8 kB]
+14% [13 libxdmcp-dev 0 B/26.8 kB 0%]                          189 kB/s 1min 22s14% [Working]                                                 189 kB/s 1min 22s                                                                               Get:14 http://th.archive.ubuntu.com/ubuntu/ quantal/main x11proto-input-dev all 2.2-1 [133 kB]
+14% [14 x11proto-input-dev 0 B/133 kB 0%]                     189 kB/s 1min 22s14% [14 x11proto-input-dev 49.7 kB/133 kB 37%]                189 kB/s 1min 22s15% [14 x11proto-input-dev 113 kB/133 kB 85%]                 189 kB/s 1min 21s15% [Working]                                                 189 kB/s 1min 21s                                                                               Get:15 http://th.archive.ubuntu.com/ubuntu/ quantal/main x11proto-kb-dev all 1.0.6-2 [269 kB]
+15% [15 x11proto-kb-dev 0 B/269 kB 0%]                        189 kB/s 1min 21s15% [15 x11proto-kb-dev 52.4 kB/269 kB 20%]                   189 kB/s 1min 21s15% [15 x11proto-kb-dev 83.0 kB/269 kB 31%]                   189 kB/s 1min 21s16% [15 x11proto-kb-dev 122 kB/269 kB 45%]                    189 kB/s 1min 20s16% [15 x11proto-kb-dev 177 kB/269 kB 66%]                    189 kB/s 1min 20s16% [15 x11proto-kb-dev 234 kB/269 kB 87%]                    189 kB/s 1min 20s16% [Working]                                                 189 kB/s 1min 20s                                                                               Get:16 http://th.archive.ubuntu.com/ubuntu/ quantal/main xtrans-dev all 1.2.7-1 [84.3 kB]
+16% [16 xtrans-dev 0 B/84.3 kB 0%]                            189 kB/s 1min 20s17% [16 xtrans-dev 56.6 kB/84.3 kB 67%]                      88.7 kB/s 2min 50s17% [Working]                                                88.7 kB/s 2min 50s                                                                               Get:17 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpthread-stubs0 i386 0.3-3 [3,264 B]
+17% [17 libpthread-stubs0 0 B/3,264 B 0%]                    88.7 kB/s 2min 50s17% [Working]                                                88.7 kB/s 2min 50s                                                                               Get:18 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpthread-stubs0-dev i386 0.3-3 [2,860 B]
+17% [18 libpthread-stubs0-dev 0 B/2,860 B 0%]                88.7 kB/s 2min 50s17% [Working]                                                88.7 kB/s 2min 50s                                                                               Get:19 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxcb1-dev i386 1.8.1-1ubuntu1 [82.2 kB]
+17% [19 libxcb1-dev 0 B/82.2 kB 0%]                          88.7 kB/s 2min 50s17% [19 libxcb1-dev 74.6 kB/82.2 kB 91%]                     88.7 kB/s 2min 49s17% [Working]                                                88.7 kB/s 2min 49s                                                                               Get:20 http://th.archive.ubuntu.com/ubuntu/ quantal/main libx11-dev i386 2:1.5.0-1 [893 kB]
+17% [20 libx11-dev 0 B/893 kB 0%]                            88.7 kB/s 2min 49s18% [20 libx11-dev 69.1 kB/893 kB 8%]                        88.7 kB/s 2min 48s18% [20 libx11-dev 134 kB/893 kB 15%]                        88.7 kB/s 2min 47s19% [20 libx11-dev 227 kB/893 kB 25%]                        88.7 kB/s 2min 46s19% [20 libx11-dev 345 kB/893 kB 39%]                        88.7 kB/s 2min 45s20% [20 libx11-dev 477 kB/893 kB 53%]                        88.7 kB/s 2min 43s21% [20 libx11-dev 594 kB/893 kB 66%]                        88.7 kB/s 2min 42s21% [20 libx11-dev 685 kB/893 kB 77%]                        88.7 kB/s 2min 41s22% [20 libx11-dev 819 kB/893 kB 92%]                        88.7 kB/s 2min 40s22% [Working]                                                88.7 kB/s 2min 39s                                                                               Get:21 http://th.archive.ubuntu.com/ubuntu/ quantal/main x11proto-render-dev all 2:0.11.1-2 [20.1 kB]
+22% [21 x11proto-render-dev 0 B/20.1 kB 0%]                  88.7 kB/s 2min 39s22% [Working]                                                88.7 kB/s 2min 38s                                                                               Get:22 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxrender-dev i386 1:0.9.7-1 [26.8 kB]
+22% [22 libxrender-dev 0 B/26.8 kB 0%]                        170 kB/s 1min 22s23% [Working]                                                 170 kB/s 1min 22s                                                                               Get:23 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpng12-dev i386 1.2.49-1ubuntu1 [206 kB]
+23% [23 libpng12-dev 0 B/206 kB 0%]                           170 kB/s 1min 22s23% [23 libpng12-dev 154 kB/206 kB 75%]                       170 kB/s 1min 21s24% [Working]                                                 170 kB/s 1min 21s                                                                               Get:24 http://th.archive.ubuntu.com/ubuntu/ quantal/main libice-dev i386 2:1.0.8-2 [52.3 kB]
+24% [24 libice-dev 0 B/52.3 kB 0%]                            170 kB/s 1min 21s24% [Working]                                                 170 kB/s 1min 21s                                                                               Get:25 http://th.archive.ubuntu.com/ubuntu/ quantal/main libsm-dev i386 2:1.2.1-2 [17.6 kB]
+24% [25 libsm-dev 0 B/17.6 kB 0%]                             170 kB/s 1min 21s24% [Working]                                                 170 kB/s 1min 21s                                                                               Get:26 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpixman-1-dev i386 0.26.0-3 [275 kB]
+24% [26 libpixman-1-dev 0 B/275 kB 0%]                        170 kB/s 1min 21s25% [26 libpixman-1-dev 187 kB/275 kB 68%]                    170 kB/s 1min 20s26% [Working]                                                 170 kB/s 1min 19s                                                                               Get:27 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxcb-render0-dev i386 1.8.1-1ubuntu1 [21.1 kB]
+26% [27 libxcb-render0-dev 0 B/21.1 kB 0%]                    170 kB/s 1min 19s26% [Working]                                                 170 kB/s 1min 19s                                                                               Get:28 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxcb-shm0-dev i386 1.8.1-1ubuntu1 [6,842 B]
+26% [28 libxcb-shm0-dev 0 B/6,842 B 0%]                       170 kB/s 1min 19s26% [Working]                                                 170 kB/s 1min 19s                                                                               Get:29 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpcre3-dev i386 1:8.30-5ubuntu1 [258 kB]
+26% [29 libpcre3-dev 0 B/258 kB 0%]                           170 kB/s 1min 19s27% [29 libpcre3-dev 172 kB/258 kB 67%]                       170 kB/s 1min 18s27% [Working]                                                 170 kB/s 1min 17s                                                                               Get:30 http://th.archive.ubuntu.com/ubuntu/ quantal/main libglib2.0-dev i386 2.34.0-1ubuntu1 [1,726 kB]
+27% [30 libglib2.0-dev 0 B/1,726 kB 0%]                       170 kB/s 1min 17s28% [30 libglib2.0-dev 233 kB/1,726 kB 13%]                   170 kB/s 1min 16s30% [30 libglib2.0-dev 474 kB/1,726 kB 27%]                   170 kB/s 1min 15s31% [30 libglib2.0-dev 759 kB/1,726 kB 44%]                   170 kB/s 1min 13s33% [30 libglib2.0-dev 1,068 kB/1,726 kB 62%]                 170 kB/s 1min 11s35% [30 libglib2.0-dev 1,379 kB/1,726 kB 80%]                  170 kB/s 1min 9s36% [30 libglib2.0-dev 1,690 kB/1,726 kB 98%]                      415 kB/s 27s37% [Waiting for headers]                                          415 kB/s 27s                                                                               Get:31 http://th.archive.ubuntu.com/ubuntu/ quantal-updates/main libcairo2-dev i386 1.12.2-1ubuntu2.1 [719 kB]
+37% [31 libcairo2-dev 0 B/719 kB 0%]                               415 kB/s 27s37% [31 libcairo2-dev 41.3 kB/719 kB 6%]                           415 kB/s 27s37% [31 libcairo2-dev 83.0 kB/719 kB 12%]                          415 kB/s 27s38% [31 libcairo2-dev 179 kB/719 kB 25%]                           415 kB/s 27s39% [31 libcairo2-dev 438 kB/719 kB 61%]                           415 kB/s 26s41% [Working]                                                      415 kB/s 26s                                                                               Get:32 http://th.archive.ubuntu.com/ubuntu/ quantal/main libcdt4 i386 2.26.3-12ubuntu1 [23.5 kB]
+41% [32 libcdt4 0 B/23.5 kB 0%]                                    415 kB/s 26s41% [Working]                                                      415 kB/s 25s                                                                               Get:33 http://th.archive.ubuntu.com/ubuntu/ quantal/main libcgraph5 i386 2.26.3-12ubuntu1 [51.0 kB]
+41% [33 libcgraph5 0 B/51.0 kB 0%]                                 415 kB/s 25s41% [Working]                                                      415 kB/s 25s                                                                               Get:34 http://th.archive.ubuntu.com/ubuntu/ quantal/main libjpeg-turbo8-dev i386 1.2.1-0ubuntu2 [417 kB]
+41% [34 libjpeg-turbo8-dev 0 B/417 kB 0%]                          415 kB/s 25s43% [34 libjpeg-turbo8-dev 312 kB/417 kB 75%]                      415 kB/s 25s43% [Working]                                                      415 kB/s 24s                                                                               Get:35 http://th.archive.ubuntu.com/ubuntu/ quantal/main libjpeg8-dev i386 8c-2ubuntu7 [1,544 B]
+43% [35 libjpeg8-dev 0 B/1,544 B 0%]                               415 kB/s 24s43% [Working]                                                      415 kB/s 24s                                                                               Get:36 http://th.archive.ubuntu.com/ubuntu/ quantal/main libjpeg-dev all 8c-2ubuntu7 [1,536 B]
+43% [36 libjpeg-dev 0 B/1,536 B 0%]                                415 kB/s 24s43% [Working]                                                      415 kB/s 24s                                                                               Get:37 http://th.archive.ubuntu.com/ubuntu/ quantal/main libdjvulibre-dev i386 3.5.25.3-1ubuntu1 [1,776 kB]
+43% [37 libdjvulibre-dev 0 B/1,776 kB 0%]                          415 kB/s 24s45% [37 libdjvulibre-dev 312 kB/1,776 kB 18%]                      415 kB/s 24s47% [37 libdjvulibre-dev 623 kB/1,776 kB 35%]                      415 kB/s 23s48% [37 libdjvulibre-dev 934 kB/1,776 kB 53%]                      415 kB/s 22s50% [37 libdjvulibre-dev 1,245 kB/1,776 kB 70%]                    415 kB/s 21s52% [37 libdjvulibre-dev 1,554 kB/1,776 kB 88%]                    438 kB/s 19s53% [Working]                                                      438 kB/s 19s                                                                               Get:38 http://th.archive.ubuntu.com/ubuntu/ quantal/main libexif-dev i386 0.6.20-3 [362 kB]
+53% [38 libexif-dev 0 B/362 kB 0%]                                 438 kB/s 19s55% [38 libexif-dev 280 kB/362 kB 77%]                             438 kB/s 18s55% [Working]                                                      438 kB/s 18s                                                                               Get:39 http://th.archive.ubuntu.com/ubuntu/ quantal/main libgdk-pixbuf2.0-dev i386 2.26.4-0ubuntu1 [49.4 kB]
+55% [39 libgdk-pixbuf2.0-dev 0 B/49.4 kB 0%]                       438 kB/s 18s55% [Working]                                                      438 kB/s 18s                                                                               Get:40 http://th.archive.ubuntu.com/ubuntu/ quantal/main libgraph4 i386 2.26.3-12ubuntu1 [37.0 kB]
+55% [40 libgraph4 0 B/37.0 kB 0%]                                  438 kB/s 18s56% [Working]                                                      438 kB/s 18s                                                                               Get:41 http://th.archive.ubuntu.com/ubuntu/ quantal/main libpathplan4 i386 2.26.3-12ubuntu1 [28.4 kB]
+56% [41 libpathplan4 0 B/28.4 kB 0%]                               438 kB/s 18s56% [Working]                                                      438 kB/s 18s                                                                               Get:42 http://th.archive.ubuntu.com/ubuntu/ quantal/main libgvc5 i386 2.26.3-12ubuntu1 [509 kB]
+56% [42 libgvc5 0 B/509 kB 0%]                                     438 kB/s 18s57% [42 libgvc5 251 kB/509 kB 49%]                                 438 kB/s 17s58% [42 libgvc5 490 kB/509 kB 96%]                                 438 kB/s 17s59% [Working]                                                      438 kB/s 17s                                                                               Get:43 http://th.archive.ubuntu.com/ubuntu/ quantal/main libgvpr1 i386 2.26.3-12ubuntu1 [205 kB]
+59% [43 libgvpr1 0 B/205 kB 0%]                                    438 kB/s 17s60% [Working]                                                      438 kB/s 16s                                                                               Get:44 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxdot4 i386 2.26.3-12ubuntu1 [18.4 kB]
+60% [44 libxdot4 0 B/18.4 kB 0%]                                   438 kB/s 16s60% [Working]                                                      438 kB/s 16s                                                                               Get:45 http://th.archive.ubuntu.com/ubuntu/ quantal/main libgraphviz-dev i386 2.26.3-12ubuntu1 [68.3 kB]
+60% [45 libgraphviz-dev 0 B/68.3 kB 0%]                            438 kB/s 16s60% [Working]                                                      438 kB/s 16s                                                                               Get:46 http://th.archive.ubuntu.com/ubuntu/ quantal/main libilmbase-dev i386 1.0.1-4 [193 kB]
+60% [46 libilmbase-dev 0 B/193 kB 0%]                              438 kB/s 16s61% [Working]                                                      438 kB/s 16s                                                                               Get:47 http://th.archive.ubuntu.com/ubuntu/ quantal/main libjasper-dev i386 1.900.1-13build1 [563 kB]
+61% [47 libjasper-dev 0 B/563 kB 0%]                               438 kB/s 16s63% [47 libjasper-dev 284 kB/563 kB 50%]                           438 kB/s 15s64% [Working]                                                      438 kB/s 14s                                                                               Get:48 http://th.archive.ubuntu.com/ubuntu/ quantal/main liblcms1-dev i386 1.19.dfsg-1.1ubuntu2 [202 kB]
+64% [48 liblcms1-dev 0 B/202 kB 0%]                                438 kB/s 14s65% [Working]                                                      438 kB/s 14s                                                                               Get:49 http://th.archive.ubuntu.com/ubuntu/ quantal/main liblqr-1-0-dev i386 0.4.1-2 [165 kB]
+65% [49 liblqr-1-0-dev 0 B/165 kB 0%]                              438 kB/s 14s66% [Working]                                                      420 kB/s 14s                                                                               Get:50 http://th.archive.ubuntu.com/ubuntu/ quantal/main libopenexr-dev i386 1.6.1-6 [376 kB]
+66% [50 libopenexr-dev 0 B/376 kB 0%]                              420 kB/s 14s68% [50 libopenexr-dev 240 kB/376 kB 64%]                          420 kB/s 14s68% [Working]                                                      420 kB/s 13s                                                                               Get:51 http://th.archive.ubuntu.com/ubuntu/ quantal/main librsvg2-dev i386 2.36.3-0ubuntu1 [123 kB]
+68% [51 librsvg2-dev 0 B/123 kB 0%]                                420 kB/s 13s69% [Working]                                                      420 kB/s 13s                                                                               Get:52 http://th.archive.ubuntu.com/ubuntu/ quantal/main liblzma-dev i386 5.1.1alpha+20120614-1 [160 kB]
+69% [52 liblzma-dev 0 B/160 kB 0%]                                 420 kB/s 13s70% [52 liblzma-dev 105 kB/160 kB 66%]                             420 kB/s 13s70% [Working]                                                      420 kB/s 13s                                                                               Get:53 http://th.archive.ubuntu.com/ubuntu/ quantal-updates/main libtiff5-dev i386 4.0.2-1ubuntu2.1 [315 kB]
+70% [53 libtiff5-dev 0 B/315 kB 0%]                                420 kB/s 13s70% [53 libtiff5-dev 94.1 kB/315 kB 30%]                           420 kB/s 12s71% [53 libtiff5-dev 234 kB/315 kB 74%]                            420 kB/s 12s72% [Working]                                                      420 kB/s 12s                                                                               Get:54 http://th.archive.ubuntu.com/ubuntu/ quantal/main libwmf-dev i386 0.2.8.4-10ubuntu2 [207 kB]
+72% [54 libwmf-dev 0 B/207 kB 0%]                                  420 kB/s 12s73% [54 libwmf-dev 169 kB/207 kB 82%]                              420 kB/s 11s73% [Working]                                                      420 kB/s 11s                                                                               Get:55 http://th.archive.ubuntu.com/ubuntu/ quantal/main x11proto-xext-dev all 7.2.1-1 [265 kB]
+73% [55 x11proto-xext-dev 0 B/265 kB 0%]                           420 kB/s 11s74% [55 x11proto-xext-dev 194 kB/265 kB 73%]                       420 kB/s 11s74% [Working]                                                      420 kB/s 11s                                                                               Get:56 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxext-dev i386 2:1.3.1-2 [90.1 kB]
+74% [56 libxext-dev 0 B/90.1 kB 0%]                                420 kB/s 11s75% [Working]                                                      420 kB/s 10s                                                                               Get:57 http://th.archive.ubuntu.com/ubuntu/ quantal/main libxt-dev i386 1:1.1.3-1 [473 kB]
+75% [57 libxt-dev 0 B/473 kB 0%]                                   420 kB/s 10s76% [57 libxt-dev 215 kB/473 kB 45%]                               420 kB/s 10s77% [57 libxt-dev 441 kB/473 kB 93%]                               321 kB/s 12s77% [Working]                                                      321 kB/s 12s                                                                               Get:58 http://th.archive.ubuntu.com/ubuntu/ quantal/main libmagickcore-dev i386 8:6.7.7.10-2ubuntu4 [1,239 kB]
+77% [58 libmagickcore-dev 0 B/1,239 kB 0%]                         321 kB/s 12s79% [58 libmagickcore-dev 251 kB/1,239 kB 20%]                     321 kB/s 12s80% [58 libmagickcore-dev 485 kB/1,239 kB 39%]                     321 kB/s 11s81% [58 libmagickcore-dev 680 kB/1,239 kB 55%]                     321 kB/s 10s82% [58 libmagickcore-dev 903 kB/1,239 kB 73%]                     321 kB/s 10s84% [58 libmagickcore-dev 1,184 kB/1,239 kB 96%]                    321 kB/s 9s84% [Working]                                                       321 kB/s 8s                                                                               Get:59 http://th.archive.ubuntu.com/ubuntu/ quantal/main libmagickwand-dev i386 8:6.7.7.10-2ubuntu4 [415 kB]
+84% [59 libmagickwand-dev 0 B/415 kB 0%]                            321 kB/s 8s85% [59 libmagickwand-dev 216 kB/415 kB 52%]                        321 kB/s 8s86% [Working]                                                       321 kB/s 7s                                                                               Get:60 http://th.archive.ubuntu.com/ubuntu/ quantal/main libx11-doc all 2:1.5.0-1 [2,460 kB]
+86% [60 libx11-doc 0 B/2,460 kB 0%]                                 321 kB/s 7s87% [60 libx11-doc 182 kB/2,460 kB 7%]                              321 kB/s 7s89% [60 libx11-doc 444 kB/2,460 kB 18%]                             321 kB/s 6s90% [60 libx11-doc 633 kB/2,460 kB 26%]                             321 kB/s 5s91% [60 libx11-doc 867 kB/2,460 kB 35%]                             321 kB/s 4s93% [60 libx11-doc 1,098 kB/2,460 kB 45%]                           445 kB/s 3s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                           445 kB/s 2s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s93% [60 libx11-doc 1,249 kB/2,460 kB 51%]                         25.2 kB/s 48s                                                                               93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,249 kB/2,460 kB 51%]93% [60 libx11-doc 1,250 kB/2,460 kB 51%]94% [60 libx11-doc 1,428 kB/2,460 kB 58%]                                         96% [60 libx11-doc 1,674 kB/2,460 kB 68%]                         70.7 kB/s 11s97% [60 libx11-doc 1,914 kB/2,460 kB 78%]                          70.7 kB/s 7s98% [60 libx11-doc 2,111 kB/2,460 kB 86%]                          70.7 kB/s 4s99% [60 libx11-doc 2,309 kB/2,460 kB 94%]                          70.7 kB/s 2s100% [Working]                                                     70.7 kB/s 0s                                                                               Fetched 18.2 MB in 1min 39s (182 kB/s)
+Extracting templates from packages: 50%Extracting templates from packages: 100%
+Selecting previously unselected package libcairo-script-interpreter2:i386.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188216 files and directories currently installed.)
+Unpacking libcairo-script-interpreter2:i386 (from .../libcairo-script-interpreter2_1.12.2-1ubuntu2.1_i386.deb) ...
+Selecting previously unselected package libpcrecpp0:i386.
+Unpacking libpcrecpp0:i386 (from .../libpcrecpp0_1%3a8.30-5ubuntu1_i386.deb) ...
+Selecting previously unselected package libtiffxx5:i386.
+Unpacking libtiffxx5:i386 (from .../libtiffxx5_4.0.2-1ubuntu2.1_i386.deb) ...
+Selecting previously unselected package libjbig-dev:i386.
+Unpacking libjbig-dev:i386 (from .../libjbig-dev_2.0-2ubuntu1_i386.deb) ...
+Selecting previously unselected package gir1.2-rsvg-2.0.
+Unpacking gir1.2-rsvg-2.0 (from .../gir1.2-rsvg-2.0_2.36.3-0ubuntu1_i386.deb) ...
+Selecting previously unselected package libbz2-dev:i386.
+Unpacking libbz2-dev:i386 (from .../libbz2-dev_1.0.6-4_i386.deb) ...
+Selecting previously unselected package libexpat1-dev.
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.1.0-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libfreetype6-dev.
+Unpacking libfreetype6-dev (from .../libfreetype6-dev_2.4.10-0ubuntu1_i386.deb) ...
+Selecting previously unselected package libfontconfig1-dev.
+Unpacking libfontconfig1-dev (from .../libfontconfig1-dev_2.10.1-0ubuntu3_i386.deb) ...
+Selecting previously unselected package xorg-sgml-doctools.
+Unpacking xorg-sgml-doctools (from .../xorg-sgml-doctools_1%3a1.10-1_all.deb) ...
+Selecting previously unselected package x11proto-core-dev.
+Unpacking x11proto-core-dev (from .../x11proto-core-dev_7.0.23-1_all.deb) ...
+Selecting previously unselected package libxau-dev:i386.
+Unpacking libxau-dev:i386 (from .../libxau-dev_1%3a1.0.7-1_i386.deb) ...
+Selecting previously unselected package libxdmcp-dev:i386.
+Unpacking libxdmcp-dev:i386 (from .../libxdmcp-dev_1%3a1.1.1-1_i386.deb) ...
+Selecting previously unselected package x11proto-input-dev.
+Unpacking x11proto-input-dev (from .../x11proto-input-dev_2.2-1_all.deb) ...
+Selecting previously unselected package x11proto-kb-dev.
+Unpacking x11proto-kb-dev (from .../x11proto-kb-dev_1.0.6-2_all.deb) ...
+Selecting previously unselected package xtrans-dev.
+Unpacking xtrans-dev (from .../xtrans-dev_1.2.7-1_all.deb) ...
+Selecting previously unselected package libpthread-stubs0:i386.
+Unpacking libpthread-stubs0:i386 (from .../libpthread-stubs0_0.3-3_i386.deb) ...
+Selecting previously unselected package libpthread-stubs0-dev:i386.
+Unpacking libpthread-stubs0-dev:i386 (from .../libpthread-stubs0-dev_0.3-3_i386.deb) ...
+Selecting previously unselected package libxcb1-dev:i386.
+Unpacking libxcb1-dev:i386 (from .../libxcb1-dev_1.8.1-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libx11-dev:i386.
+Unpacking libx11-dev:i386 (from .../libx11-dev_2%3a1.5.0-1_i386.deb) ...
+Selecting previously unselected package x11proto-render-dev.
+Unpacking x11proto-render-dev (from .../x11proto-render-dev_2%3a0.11.1-2_all.deb) ...
+Selecting previously unselected package libxrender-dev:i386.
+Unpacking libxrender-dev:i386 (from .../libxrender-dev_1%3a0.9.7-1_i386.deb) ...
+Selecting previously unselected package libpng12-dev.
+Unpacking libpng12-dev (from .../libpng12-dev_1.2.49-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libice-dev:i386.
+Unpacking libice-dev:i386 (from .../libice-dev_2%3a1.0.8-2_i386.deb) ...
+Selecting previously unselected package libsm-dev:i386.
+Unpacking libsm-dev:i386 (from .../libsm-dev_2%3a1.2.1-2_i386.deb) ...
+Selecting previously unselected package libpixman-1-dev.
+Unpacking libpixman-1-dev (from .../libpixman-1-dev_0.26.0-3_i386.deb) ...
+Selecting previously unselected package libxcb-render0-dev:i386.
+Unpacking libxcb-render0-dev:i386 (from .../libxcb-render0-dev_1.8.1-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libxcb-shm0-dev:i386.
+Unpacking libxcb-shm0-dev:i386 (from .../libxcb-shm0-dev_1.8.1-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5ubuntu1_i386.deb) ...
+Selecting previously unselected package libglib2.0-dev.
+Unpacking libglib2.0-dev (from .../libglib2.0-dev_2.34.0-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libcairo2-dev.
+Unpacking libcairo2-dev (from .../libcairo2-dev_1.12.2-1ubuntu2.1_i386.deb) ...
+Selecting previously unselected package libcdt4.
+Unpacking libcdt4 (from .../libcdt4_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libcgraph5.
+Unpacking libcgraph5 (from .../libcgraph5_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libjpeg-turbo8-dev:i386.
+Unpacking libjpeg-turbo8-dev:i386 (from .../libjpeg-turbo8-dev_1.2.1-0ubuntu2_i386.deb) ...
+Selecting previously unselected package libjpeg8-dev:i386.
+Unpacking libjpeg8-dev:i386 (from .../libjpeg8-dev_8c-2ubuntu7_i386.deb) ...
+Selecting previously unselected package libjpeg-dev.
+Unpacking libjpeg-dev (from .../libjpeg-dev_8c-2ubuntu7_all.deb) ...
+Selecting previously unselected package libdjvulibre-dev.
+Unpacking libdjvulibre-dev (from .../libdjvulibre-dev_3.5.25.3-1ubuntu1_i386.deb) ...
+Selecting previously unselected package libexif-dev.
+Unpacking libexif-dev (from .../libexif-dev_0.6.20-3_i386.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-dev.
+Unpacking libgdk-pixbuf2.0-dev (from .../libgdk-pixbuf2.0-dev_2.26.4-0ubuntu1_i386.deb) ...
+Selecting previously unselected package libgraph4.
+Unpacking libgraph4 (from .../libgraph4_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libpathplan4.
+Unpacking libpathplan4 (from .../libpathplan4_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libgvc5.
+Unpacking libgvc5 (from .../libgvc5_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libgvpr1.
+Unpacking libgvpr1 (from .../libgvpr1_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libxdot4.
+Unpacking libxdot4 (from .../libxdot4_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libgraphviz-dev.
+Unpacking libgraphviz-dev (from .../libgraphviz-dev_2.26.3-12ubuntu1_i386.deb) ...
+Selecting previously unselected package libilmbase-dev.
+Unpacking libilmbase-dev (from .../libilmbase-dev_1.0.1-4_i386.deb) ...
+Selecting previously unselected package libjasper-dev.
+Unpacking libjasper-dev (from .../libjasper-dev_1.900.1-13build1_i386.deb) ...
+Selecting previously unselected package liblcms1-dev:i386.
+Unpacking liblcms1-dev:i386 (from .../liblcms1-dev_1.19.dfsg-1.1ubuntu2_i386.deb) ...
+Selecting previously unselected package liblqr-1-0-dev.
+Unpacking liblqr-1-0-dev (from .../liblqr-1-0-dev_0.4.1-2_i386.deb) ...
+Selecting previously unselected package libopenexr-dev.
+Unpacking libopenexr-dev (from .../libopenexr-dev_1.6.1-6_i386.deb) ...
+Selecting previously unselected package librsvg2-dev.
+Unpacking librsvg2-dev (from .../librsvg2-dev_2.36.3-0ubuntu1_i386.deb) ...
+Selecting previously unselected package liblzma-dev:i386.
+Unpacking liblzma-dev:i386 (from .../liblzma-dev_5.1.1alpha+20120614-1_i386.deb) ...
+Selecting previously unselected package libtiff5-dev.
+Unpacking libtiff5-dev (from .../libtiff5-dev_4.0.2-1ubuntu2.1_i386.deb) ...
+Selecting previously unselected package libwmf-dev.
+Unpacking libwmf-dev (from .../libwmf-dev_0.2.8.4-10ubuntu2_i386.deb) ...
+Selecting previously unselected package x11proto-xext-dev.
+Unpacking x11proto-xext-dev (from .../x11proto-xext-dev_7.2.1-1_all.deb) ...
+Selecting previously unselected package libxext-dev:i386.
+Unpacking libxext-dev:i386 (from .../libxext-dev_2%3a1.3.1-2_i386.deb) ...
+Selecting previously unselected package libxt-dev:i386.
+Unpacking libxt-dev:i386 (from .../libxt-dev_1%3a1.1.3-1_i386.deb) ...
+Selecting previously unselected package libmagickcore-dev.
+Unpacking libmagickcore-dev (from .../libmagickcore-dev_8%3a6.7.7.10-2ubuntu4_i386.deb) ...
+Selecting previously unselected package libmagickwand-dev.
+Unpacking libmagickwand-dev (from .../libmagickwand-dev_8%3a6.7.7.10-2ubuntu4_i386.deb) ...
+Selecting previously unselected package libx11-doc.
+Unpacking libx11-doc (from .../libx11-doc_2%3a1.5.0-1_all.deb) ...
+Processing triggers for doc-base ...
+Processing 5 added doc-base files...
+Processing triggers for man-db ...
+Processing triggers for libglib2.0-0:i386 ...
+Setting up libcairo-script-interpreter2:i386 (1.12.2-1ubuntu2.1) ...
+Setting up libpcrecpp0:i386 (1:8.30-5ubuntu1) ...
+Setting up libtiffxx5:i386 (4.0.2-1ubuntu2.1) ...
+Setting up libjbig-dev:i386 (2.0-2ubuntu1) ...
+Setting up gir1.2-rsvg-2.0 (2.36.3-0ubuntu1) ...
+Setting up libbz2-dev:i386 (1.0.6-4) ...
+Setting up libexpat1-dev (2.1.0-1ubuntu1) ...
+Setting up libfreetype6-dev (2.4.10-0ubuntu1) ...
+Setting up libfontconfig1-dev (2.10.1-0ubuntu3) ...
+Setting up xorg-sgml-doctools (1:1.10-1) ...
+Setting up x11proto-core-dev (7.0.23-1) ...
+Setting up libxau-dev:i386 (1:1.0.7-1) ...
+Setting up libxdmcp-dev:i386 (1:1.1.1-1) ...
+Setting up x11proto-input-dev (2.2-1) ...
+Setting up x11proto-kb-dev (1.0.6-2) ...
+Setting up xtrans-dev (1.2.7-1) ...
+Setting up libpthread-stubs0:i386 (0.3-3) ...
+Setting up libpthread-stubs0-dev:i386 (0.3-3) ...
+Setting up libxcb1-dev:i386 (1.8.1-1ubuntu1) ...
+Setting up libx11-dev:i386 (2:1.5.0-1) ...
+Setting up x11proto-render-dev (2:0.11.1-2) ...
+Setting up libxrender-dev:i386 (1:0.9.7-1) ...
+Setting up libpng12-dev (1.2.49-1ubuntu1) ...
+Setting up libice-dev:i386 (2:1.0.8-2) ...
+Setting up libsm-dev:i386 (2:1.2.1-2) ...
+Setting up libpixman-1-dev (0.26.0-3) ...
+Setting up libxcb-render0-dev:i386 (1.8.1-1ubuntu1) ...
+Setting up libxcb-shm0-dev:i386 (1.8.1-1ubuntu1) ...
+Setting up libpcre3-dev (1:8.30-5ubuntu1) ...
+Setting up libglib2.0-dev (2.34.0-1ubuntu1) ...
+Setting up libcairo2-dev (1.12.2-1ubuntu2.1) ...
+Setting up libcdt4 (2.26.3-12ubuntu1) ...
+Setting up libcgraph5 (2.26.3-12ubuntu1) ...
+Setting up libjpeg-turbo8-dev:i386 (1.2.1-0ubuntu2) ...
+Setting up libjpeg8-dev:i386 (8c-2ubuntu7) ...
+Setting up libjpeg-dev (8c-2ubuntu7) ...
+Setting up libdjvulibre-dev (3.5.25.3-1ubuntu1) ...
+Setting up libexif-dev (0.6.20-3) ...
+Setting up libgdk-pixbuf2.0-dev (2.26.4-0ubuntu1) ...
+Setting up libgraph4 (2.26.3-12ubuntu1) ...
+Setting up libpathplan4 (2.26.3-12ubuntu1) ...
+Setting up libgvc5 (2.26.3-12ubuntu1) ...
+Setting up libgvpr1 (2.26.3-12ubuntu1) ...
+Setting up libxdot4 (2.26.3-12ubuntu1) ...
+Setting up libgraphviz-dev (2.26.3-12ubuntu1) ...
+Setting up libilmbase-dev (1.0.1-4) ...
+Setting up libjasper-dev (1.900.1-13build1) ...
+Setting up liblcms1-dev:i386 (1.19.dfsg-1.1ubuntu2) ...
+Setting up liblqr-1-0-dev (0.4.1-2) ...
+Setting up libopenexr-dev (1.6.1-6) ...
+Setting up librsvg2-dev (2.36.3-0ubuntu1) ...
+Setting up liblzma-dev:i386 (5.1.1alpha+20120614-1) ...
+Setting up libtiff5-dev (4.0.2-1ubuntu2.1) ...
+Setting up libwmf-dev (0.2.8.4-10ubuntu2) ...
+Setting up x11proto-xext-dev (7.2.1-1) ...
+Setting up libxext-dev:i386 (2:1.3.1-2) ...
+Setting up libxt-dev:i386 (1:1.1.3-1) ...
+Setting up libmagickcore-dev (8:6.7.7.10-2ubuntu4) ...
+Setting up libmagickwand-dev (8:6.7.7.10-2ubuntu4) ...
+Setting up libx11-doc (2:1.5.0-1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ brew install imagemagick
+No command 'brew' found, did you mean:
+ Command 'brec' from package 'bplay' (universe)
+ Command 'qbrew' from package 'qbrew' (universe)
+brew: command not found
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Using rake (10.0.2) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.7) 
+Using activesupport (3.2.9) 
+Using builder (3.0.4) 
+Using activemodel (3.2.9) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.1) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.1) 
+Using tilt (1.3.3) 
+Using sprockets (2.2.1) 
+Using actionpack (3.2.9) 
+Using mime-types (1.19) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.4.4) 
+Using actionmailer (3.2.9) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.35) 
+Using activerecord (3.2.9) 
+Using activeresource (3.2.9) 
+Using bcrypt-ruby (3.0.1) 
+Using sass (3.2.3) 
+Using bootstrap-sass (2.2.1.1) 
+Using bundler (1.2.1) 
+Installing cocaine (0.4.2) 
+Using coffee-script-source (1.4.0) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.2) 
+Using json (1.7.5) 
+Using rdoc (3.12) 
+Using thor (0.16.0) 
+Using railties (3.2.9) 
+Using coffee-rails (3.2.2) 
+Using orm_adapter (0.4.0) 
+Using warden (1.2.1) 
+Using devise (2.1.2) 
+Using jquery-rails (2.1.3) 
+Using libv8 (3.3.10.4) 
+Installing paperclip (3.3.1) 
+Using pg (0.14.1) 
+Using rails (3.2.9) 
+Using sass-rails (3.2.5) 
+Using therubyracer (0.10.2) 
+Using uglifier (1.3.0) 
+Using will_paginate (3.0.3) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+[32mPost-install message from paperclip:
+##################################################
+#  NOTE FOR UPGRADING FROM PRE-3.0 VERSION       #
+##################################################
+
+Paperclip 3.0 introduces a non-backward compatible change in your attachment
+path. This will help to prevent attachment name clashes when you have
+multiple attachments with the same name. If you didn't alter your
+attachment's path and are using Paperclip's default, you'll have to add
+`:path` and `:url` to your `has_attached_file` definition. For example:
+
+    has_attached_file :avatar,
+      :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+      :url => "/system/:attachment/:id/:style/:filename"
+
+[0m
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ paperclip
+paperclip: command not found
+]0;pao@pao: ~/test/order_coffeepao@pao:~/test/order_coffee$ generate per[K[K[K[K[K[K[K[K[K[K[K[Kscript/generate
+bash: script/generate: No such file or directory
+]0;pao@pao: ~/test/order_coffeepao@pao:~/t
