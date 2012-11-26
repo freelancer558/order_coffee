@@ -2,7 +2,11 @@
 <div class="pull-right">
   <a href="#myModal" role="button" class="btn btn-primary btn-larg" data-toggle="modal"><span class="icon-plus"></span>Take Order</a>
   <a href="history" role="button" class="btn btn-larg"><span class="icon-folder-open"></span>History</a>
+  <% if(current_user.admin==true ) %>
+    <%= link_to 'Clear', clear_path, :class => 'btn btn-larg',:title =>'Clear', method: :put, data: { confirm: 'Clear all new order?' } %>
+  <% end %>
 </div>
+
 <%= render 'take_order' %>
 <%= render 'order_new' %>
 

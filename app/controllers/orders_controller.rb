@@ -38,8 +38,9 @@ class OrdersController < ApplicationController
    		@orders_history = Order.history.order_desc	 
     	@orders_cancled = Order.cancel.order_desc  
     	@order = Order.new
-    	@done_cancel = Order.paginate(:page => params[:page]).done_cancel.order_desc 
-	end
+    	@done_cancel = Order.paginate(:page => params[:page]).done_cancel.order_desc     	
+    	@coffee_all = Coff.all
+	end	
 	#===========================================
     def destroy
 	    order = Order.find(params[:id])
@@ -67,4 +68,19 @@ class OrdersController < ApplicationController
 	    end
  	end
 	#===========================================
+	def clear
+ 	
+
+	    respond_to do |format|
+	     # if order.update_attributes(params[:coff])
+	     if Order.update_all(:status_id => Status::DONE_ID)
+	        format.html { redirect_to root_path}
+	        format.json { head :no_content }
+	      else
+	        format.html { render action: "edit" }
+	        format.json { render json: @order.errors, status: :unprocessable_entity }
+	      end
+	    end
+ 	end
+
 end

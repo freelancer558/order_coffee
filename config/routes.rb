@@ -10,7 +10,7 @@ OrderCoffee::Application.routes.draw do
   devise_for :users
   resources :orders
   match 'history' => 'orders#history'
-
+  match 'clear' => 'orders#clear'
 
   
   # The priority is based upon order of creation:

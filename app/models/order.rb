@@ -11,6 +11,7 @@ class Order < ActiveRecord::Base
   scope :done_cancel, where("status_id <> ?", Status::NEW_ORDER_ID)
   scope :order_desc, order("created_at desc")
 
+  
 
   attr_accessible :comment, :coff_id, :user_id, :status_id
 end

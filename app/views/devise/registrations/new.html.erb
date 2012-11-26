@@ -5,6 +5,8 @@
 <%= f.text_field :username, :autofocus => true %> 
 <%= f.label :email %>
 <%= f.email_field :email, :required => true %>
+<%= f.label :avatar %>
+<%= f.file_field :photo, :required => true %>
 <%= f.label :password %>
 <%= f.password_field :password, :required => true %>
 <%= f.label :password_confirmation %>
