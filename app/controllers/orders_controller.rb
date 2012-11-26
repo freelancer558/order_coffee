@@ -5,10 +5,11 @@ class OrdersController < ApplicationController
 		@order.user_id = current_user.id 
 		@order.status_id = 1 #default
 
-		flash[:notice] = 'Order successfully updated.'
+		
 
 	    # respond_to do |format|
 	     if @order.save
+        flash[:notice] = 'Order successfully updated.'
 	       redirect_to root_path
 	     else
 	       format.html { render action: "new" }

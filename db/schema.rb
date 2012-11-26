@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20121126040939) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "kind"
+    t.string   "option"
+    t.string   "comment"
   end
 
   create_table "orders", :force => true do |t|

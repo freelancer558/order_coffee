@@ -1,10 +1,13 @@
-<div class="well">
+<div class="well well-small">
 	<h4>All [<%= @users.size %>] users</h4>
-	<div>
-		<ul class="nav nav-tabs nav-stacked">
-			<% @users.each do |user| %>
-			<li><%= user.username %></li>
-			<% end %>
-		</ul>
-	</div>
+	<div class="media">
+    <% @users.each do |user| %>
+    <a class="pull-left">
+      <%= image_tag user.photo.url(:thumb), :class => 'media-object' %>
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading"><%= user.username %></h4>
+    </div>
+    <% end %>
+  </div>
 </div>

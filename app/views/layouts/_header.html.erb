@@ -10,10 +10,10 @@
       <div class="nav-collapse collapse">  
         <ul class="nav pull-right">
           <%if user_signed_in? %>
+          <li><%= link_to (image_tag  current_user.photo.url(:thumb), :class => 'img-polaroid pull-left', :title => current_user.username, :width => 40), edit_user_registration_path %></li>
           <%if current_user.admin? %>
           <li><%= link_to "Hello Admin [#{current_user.username}]", admin_dashboard_path %></li>
           <li><%= link_to "Dashboard", admin_dashboard_path %></li>
-          <% end %>
           <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -22,12 +22,12 @@
               <li><%= link_to "Edit profile", edit_user_registration_path %></li>
             </ul>
           </li>
-          <li>
-            <%=link_to "Log out ", destroy_user_session_path, :method => :delete %>
-          </li>
-          <li>
-            <img src=<%= current_user.photo.url %> class="img-rounded img-polaroid pull-left" width="40" title="<%=current_user.username%>" />
-          </li>
+          <% end %>
+          <% if !current_user.admin? %>
+          <li><%= link_to "Hello [#{current_user.username}]", root_path %></li>
+          <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+          <% end %>
+          <li><%= link_to "Log out ", destroy_user_session_path, :method => :delete %></li>
           <%else%>
           <li><%= link_to 'Sign In' , new_user_session_path %></li>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
