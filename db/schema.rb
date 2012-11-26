@@ -34,10 +34,10 @@ ActiveRecord::Schema.define(:version => 20121126040939) do
   create_table "orders", :force => true do |t|
     t.integer  "user_id"
     t.text     "comment"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "coff_id"
-    t.integer  "status_id"
+    t.integer  "status_id",  :default => 1
   end
 
   add_index "orders", ["user_id"], :name => "index_orders_on_user_id"

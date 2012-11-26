@@ -82337,3 +82337,60 @@ DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove 
   [1m[35m (0.3ms)[0m  BEGIN
   [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "statuses" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Thu, 22 Nov 2012 04:32:00 UTC +00:00], ["name", "Cancel"], ["updated_at", Thu, 22 Nov 2012 04:32:00 UTC +00:00]]
   [1m[35m (6.0ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (22.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20121120101924)
+Migrating to CreateCoffs (20121120163904)
+Migrating to CreateOrders (20121121024133)
+Migrating to AddCoffIdToOrder (20121121035211)
+Migrating to AddStatusToOrder (20121121100339)
+Migrating to CreateStatuses (20121121100607)
+Migrating to AddUsernameToUsers (20121122093152)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (117.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "username" character varying(255)[0m
+  [1m[35m (53.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121122093152')
+  [1m[36m (27.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRoles (20121122103045)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (610.0ms)[0m  [1mCREATE TABLE "roles" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121122103045')
+  [1m[36m (20.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddRoleToUser (20121122103143)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (17.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "role_id" integer[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121122103143')
+  [1m[36m (43.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAdmins (20121123034219)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (96.7ms)[0m  [1mCREATE TABLE "admins" ("id" serial primary key, "dashboard" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121123034219')
+  [1m[36m (19.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentImageToCoffs (20121123060051)
+  [1m[35m (0.4ms)[0m  BEGIN
+DEPRECATION WARNING: Method `t.has_attached_file` in the migration has been deprecated and will be replaced by `t.attachment`. (called from block in up at /home/h311b0y/codePONPON/order_coffee/db/migrate/20121123060051_add_attachment_image_to_coffs.rb:4)
+  [1m[36m (64.6ms)[0m  [1mALTER TABLE "coffs" ADD COLUMN "image_file_name" character varying(255)[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "coffs" ADD COLUMN "image_content_type" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "coffs" ADD COLUMN "image_file_size" integer[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "coffs" ADD COLUMN "image_updated_at" timestamp
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121123060051')[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+Migrating to AddAdminToUser (20121123073106)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.6ms)[0m  ALTER TABLE "users" ADD COLUMN "admin" boolean
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121123073106')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+Migrating to AddTypeToCoff (20121123105608)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "coffs" ADD COLUMN "kind" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121123105608')[0m
+  [1m[35m (5.4ms)[0m  COMMIT
+Migrating to AddAttachmentPhotoToUsers (20121126040939)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+DEPRECATION WARNING: Method `t.has_attached_file` in the migration has been deprecated and will be replaced by `t.attachment`. (called from block in up at /home/h311b0y/codePONPON/order_coffee/db/migrate/20121126040939_add_attachment_photo_to_users.rb:4)
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD COLUMN "photo_file_name" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "photo_content_type" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD COLUMN "photo_file_size" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "photo_updated_at" timestamp[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121126040939')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
