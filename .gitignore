@@ -21,4 +21,9 @@ public/assets/*
 .DS_Store
 .sass-cache
 doc/*
-
+log/
+tmp/
+*.log
+.DS_Store
+config/database.yml
+public/system/*

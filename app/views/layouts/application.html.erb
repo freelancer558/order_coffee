@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Coffee Order</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>    
-    <%= yield :javascripts_test %>
-    <%= yield :css_test %>
-  </head>
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-    <%= render 'layouts/header' %>
-    <div class="container">
+<head>
+  <title>Coffee Order - <%= yield(:title) || "The Place to Buy Stuff" %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>    
+  <%= yield :javascripts_test %>
+  <%= yield :css_test %>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <%= render 'layouts/header' %>
+  <div class="container">
     <%= yield %>
-    </div>
-    <%= render 'layouts/footer' %>
-  </body>
+  </div>
+  <%= render 'layouts/footer' %>
+</body>
 </html>

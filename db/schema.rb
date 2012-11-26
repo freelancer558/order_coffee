@@ -11,13 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121121100607) do
+ActiveRecord::Schema.define(:version => 20121126040939) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "dashboard"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "coffs", :force => true do |t|
     t.string   "name"
     t.integer  "price"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "kind"
   end
 
   create_table "orders", :force => true do |t|
@@ -26,10 +37,16 @@ ActiveRecord::Schema.define(:version => 20121121100607) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "coff_id"
-    t.integer  "status_id", :default => 1
+    t.integer  "status_id"
   end
 
   add_index "orders", ["user_id"], :name => "index_orders_on_user_id"
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "statuses", :force => true do |t|
     t.string   "name"
@@ -51,6 +68,13 @@ ActiveRecord::Schema.define(:version => 20121121100607) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "username"
+    t.integer  "role_id"
+    t.boolean  "admin"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

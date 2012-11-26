@@ -1,4 +1,4 @@
-<%= form_for(@coff) do |f| %>
+<%= form_for(@coff,:html =>{ :multipart=> true})  do |f| %>
   <% if @coff.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@coff.errors.count, "error") %> prohibited this coff from being saved:</h2>
@@ -18,6 +18,9 @@
   <div class="field">
     <%= f.label :price %><br />
     <%= f.number_field :price %>
+  </div>
+  <div>
+   <%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>

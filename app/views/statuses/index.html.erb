@@ -1,23 +1,21 @@
-<h1>Listing statuses</h1>
+<div class="well">
+  <h4>Order Status</h4>
+  <p><%= link_to 'New Status', new_status_path %></p>
+  <table class="table table-hover table-bordered">
+    <tr class="success">
+      <td>Name</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <% @statuses.each do |status| %>
+    <tr>
+      <td><%= status.name %></td>
+      <td><%= link_to 'Show', status %></td>
+      <td><%= link_to 'Edit', edit_status_path(status) %></td>
+      <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @statuses.each do |status| %>
-  <tr>
-    <td><%= status.name %></td>
-    <td><%= link_to 'Show', status %></td>
-    <td><%= link_to 'Edit', edit_status_path(status) %></td>
-    <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Status', new_status_path %>

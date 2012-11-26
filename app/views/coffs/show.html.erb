@@ -10,6 +10,10 @@
   <%= @coff.price %>
 </p>
 
+<p>
+	<img src=<%= @coff.image.url %> class="img-rounded img-polaroid" width="100" />
+
+</p>
 
 <%= link_to 'Edit', edit_coff_path(@coff) %> |
 <%= link_to 'Back', coffs_path %>
